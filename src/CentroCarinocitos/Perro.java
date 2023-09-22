@@ -2,16 +2,19 @@ package CentroCarinocitos;
 
 public class Perro {
     int edad,peso,id;
-    String nombre;
+    String nombre,raza,color, sexo;
 
     public Perro(){
     }
 
-    public Perro(int edad, int peso, int id, String nombre) {
+    public Perro(int edad, int peso, int id, String nombre, String raza, String color, String sexo) {
         this.edad = edad;
         this.peso = peso;
         this.id = id;
         this.nombre = nombre;
+        this.raza = raza;
+        this.color = color;
+        this.sexo = sexo;
     }
 
     public int getEdad() {
@@ -24,6 +27,10 @@ public class Perro {
 
     public int getPeso() {
         return peso;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
     }
 
     public int getId() {
@@ -42,7 +49,27 @@ public class Perro {
         this.nombre = nombre;
     }
 
-    public void setPeso(int peso) {
-        this.peso = peso;
+    public String getRaza() {
+        return raza;
+    }
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
 }
